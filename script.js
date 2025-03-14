@@ -3,11 +3,12 @@ document.addEventListener("DOMContentLoaded", function () {
     let memberList = document.getElementById("memberList");
 
     selectBox.addEventListener("mouseenter", function () {
-        selectBox.style.display = "none";
-        memberList.classList.remove("hidden"); 
+        selectBox.style.visibility = "hidden"; 
+        memberList.classList.remove("hidden");
     });
+
     memberList.addEventListener("mouseleave", function () {
-        memberList.classList.add("hidden"); 
-        selectBox.style.display = "block"; 
+        memberList.classList.add("hidden");
+        selectBox.style.visibility = "visible";
     });
 });

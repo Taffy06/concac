@@ -47,3 +47,32 @@ select {
 #memberList li:hover {
   background: #f0f0f0;
 }
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  padding: 10px 20px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  background: linear-gradient(to right, red, blue);
+  background-size: 200% auto;
+  transition: background 0.3s ease;
+  animation: moveGradient 3s infinite linear;
+}
+
+@keyframes moveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
