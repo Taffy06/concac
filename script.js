@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     selectBox.addEventListener("mouseleave", function () {
         setTimeout(() => {
             memberList.classList.add("hidden");
-        }, 500); // Chờ 0.5 giây để tránh tắt quá nhanh
+        }, 500); // Tránh bị ẩn ngay lập tức
     });
 
     // Ẩn danh sách khi trỏ chuột ra ngoài danh sách
