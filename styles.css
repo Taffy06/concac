@@ -23,7 +23,7 @@ select {
 .hidden {
   display: none;
   position: absolute;
-  top: 50px; /* Điều chỉnh vị trí theo ý bạn */
+  top: 50px;
   left: 50%;
   transform: translateX(-50%);
   background: white;
